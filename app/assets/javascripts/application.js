@@ -18,9 +18,6 @@ $(document).on('turbolinks:load', function() {
     console.log("scrolled");
     var y = $(this).scrollTop();
     $('header').css('background-position', '0 ' + parseInt( y / 3 ) + 'px');
-    $('header').css('filter','brightness(' + parseInt(100 - y/10) + '%)' );
-    $('.profile').css('filter','brightness(' + parseInt(100 - y/10) + '%)' );
-    $('.background').css('filter','brightness(' + parseInt(100 - y/10) + '%)' );
     $('.header-title').css('top', parseInt(  y / 4 ) + 'px');
     $('.background').css('background-position', '0 ' + parseInt( y / 3 - 200) + 'px');
     $('footer').css('background-position', '0 ' + parseInt( y / 3 ) + 'px');
