@@ -1,0 +1,244 @@
+/* line 5, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+input[type="submit"] {
+  width: 100%;
+  background-color: salmon;
+  color: #fff;
+  height: 50px;
+}
+
+/* line 11, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+.background {
+  height: 250px;
+  width: 100%;
+  background-image: url("back-middle");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 18, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main {
+  overflow: auto;
+  position: relative;
+  background-color: #DADFEF;
+}
+/* line 22, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .profile {
+  text-align: center;
+  padding: 32px;
+  overflow: auto;
+  width: 100%;
+  background-color: #B3424A;
+  color: #DADFEF;
+}
+/* line 29, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .profile span {
+  font-size: 24px;
+  font-family: 'Avenir Next';
+  font-weight: lighter;
+}
+/* line 35, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main {
+  overflow: auto;
+  display: grid;
+  margin: 80px;
+  grid-template-columns: 300px 1fr 300px;
+}
+/* line 40, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main div {
+  width: 100%;
+  padding: 8px;
+}
+@media screen and (max-width: 1100px) {
+  /* line 35, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+  main .blog-main {
+    grid-template-columns: 100%;
+    margin: 16px;
+  }
+}
+/* line 49, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-left .menu-1 {
+  padding: 10px 16px;
+  background-color: #231F20;
+  color: #DADFEF;
+}
+/* line 54, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-left .menu-2 {
+  padding: 8px;
+  border-bottom: 1px dotted #bbb;
+  font-size: 13px;
+}
+/* line 61, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-center .best-articles {
+  width: 100%;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1100px) {
+  /* line 61, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+  main .blog-main .blog-center .best-articles {
+    grid-template-columns: 100%;
+  }
+}
+/* line 67, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-center .best-articles .best-article {
+  width: 100%;
+  padding: 8px;
+  background-color: #bbb;
+  height: 200px;
+}
+/* line 72, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-center .best-articles .best-article:hover {
+  background-color: #959595;
+  transition: 300ms ease;
+}
+/* line 78, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-center .notice {
+  width: 100%;
+  padding: 4px;
+  border-bottom: dotted 1px #aaa;
+}
+/* line 83, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-center .list-content {
+  padding: 12px;
+  color: #231F20;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #eef;
+  font-style: normal;
+}
+/* line 90, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-center .list-content span {
+  font-size: 12px;
+}
+/* line 96, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-right .ad-space {
+  height: 200px;
+  width: 100%;
+  margin: 8px 0;
+  background-color: #ccc;
+}
+/* line 102, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-right .sns-btn {
+  width: 100%;
+  padding: 16px;
+  margin: 8px 0;
+  border: solid 4px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 110, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-right .sns-btn:hover {
+  background-color: #fff;
+  transition: 300ms ease;
+}
+/* line 115, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-right .twitter {
+  color: #00aced;
+}
+/* line 118, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .blog-main .blog-right .qiita {
+  color: #1dcd00;
+}
+/* line 123, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .admin-wrap {
+  margin: auto;
+  overflow: auto;
+  padding: 16px;
+}
+/* line 127, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .admin-wrap .menu {
+  padding: 8px 16px;
+  background-color: #231F20;
+  color: white;
+}
+/* line 132, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .admin-wrap input[type="text"], main .admin-wrap input[type="file"] {
+  padding: 10px;
+  font-size: 14px;
+  margin: 4px 0;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px salmon;
+}
+/* line 140, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/home.scss */
+main .admin-wrap input[type="text"]:focus, main .admin-wrap input[type="file"]:focus {
+  background-color: #fff;
+  transition: 400ms ease;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/application.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 21, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/application.scss */
+html, body {
+  width: 100%;
+  margin: 0;
+  font-family: -apple-system, 'Avenir Next',BlinkMacSystemFont, "Helvetica Neue", Hiragino Kaku Gothic ProN,"Noto Sans Japanese", Arial, Meiryo, sans-serif;
+}
+
+/* line 26, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/application.scss */
+input {
+  -webkit-appearance: none;
+}
+
+/* line 30, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/application.scss */
+header {
+  overflow: auto;
+  width: 100%;
+  background-image: url("header-back.jpg");
+  background-size: cover;
+}
+/* line 35, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/application.scss */
+header .header-title {
+  overflow: auto;
+  position: relative;
+  padding: 140px 100px;
+  padding-bottom: 40px;
+}
+/* line 41, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/application.scss */
+header .header-title h1 {
+  font-size: 70px;
+  font-family: 'Avenir Next';
+  font-weight: lighter;
+  font-style: italic;
+  color: #B3424A;
+  margin: 0;
+}
+/* line 49, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/application.scss */
+header .header-title span {
+  font-size: 24px;
+  color: #202641;
+  line-height: 5px;
+}
+@media (max-width: 700px) {
+  /* line 57, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/application.scss */
+  header .header-title {
+    padding: 16px;
+  }
+}
+
+/* line 62, /Users/str121kei/workspace/endeavor/app/assets/stylesheets/application.scss */
+footer {
+  height: 300px;
+  background-image: url("header-back.jpg");
+  background-size: cover;
+}
