@@ -33,6 +33,9 @@ class HomeController < ApplicationController
     @article.file_name = params[:title] + ".html"
     if @article.save
       File.binwrite('public/articles/' + @article.file_name ,params[:html].read)
+      if params[:image]
+        File.binwrite('public/images/' + @article.title + '.jpg' ,params[:image].read)
+      end
       redirect_to('/index')
     end
   end
