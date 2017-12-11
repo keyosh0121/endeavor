@@ -1,0 +1,15 @@
+<main>
+  <div class="admin-wrap">
+    <%= form_tag('/admin/upload',{multipart: true}) do %>
+      <div class="menu">記事のタイトル</div>
+      <input type="text" name="title" placeholder="タイトルを入力">
+      <div class="menu">記事カテゴリ</div>
+      <input type="text" name="category" placeholder="カテゴリを入力">
+      <div class="menu">記事のタグ(,区切り)</div>
+      <input type="text" name="tags" placeholder="タグを入力（コンマ区切り）">
+      <div class="menu">記事の内容(html)</div>
+      <input type="file" name="html">
+      <input type="submit" value="記事を保存">
+    <% end%>
+  </div>
+</main>

@@ -1,0 +1,146 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "colors";
+input[type="submit"]{
+  width:100%;
+  background-color: salmon;
+  color: #fff;
+  height:50px;
+}
+.background{
+  height:250px;
+  width: 100%;
+  background-image:url('back-middle');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main{
+  overflow: auto;
+  position:relative;
+  background-color: $soap;
+  .profile{
+    text-align: center;
+    padding:32px;
+    overflow:auto;
+    width: 100%;
+    background-color:$enji;
+    color:$soap;
+    span{
+      font-size: 24px;
+      font-family: 'Avenir Next';
+      font-weight: lighter;
+    }
+  }
+  .blog-main{
+    overflow: auto;
+    display: grid;
+    margin:80px;
+    grid-template-columns:300px 1fr 300px;
+    div{
+      width:100%;
+      padding:8px;
+    }
+    @media screen and (max-width: 1100px){
+      grid-template-columns:100%;
+      margin:16px;
+    }
+    .blog-left{
+      .menu-1{
+        padding:10px 16px;
+        background-color: $black;
+        color: $soap;
+      }
+      .menu-2{
+        padding: 8px;
+        border-bottom: 1px dotted #bbb;
+        font-size: 13px;
+      }
+    }
+    .blog-center{
+      .best-articles{
+        width:100%;
+        display: grid;
+        grid-gap:8px;
+        grid-template-columns:1fr 1fr 1fr;
+        @media screen and (max-width: 1100px){grid-template-columns:100%;}
+        .best-article{
+          width:100%;
+          padding:8px;
+          background-color: #bbb;
+          height:200px;
+          &:hover{
+            background-color: darken(#bbb,15%);
+            transition:300ms ease;
+          }
+        }
+      }
+      .notice{
+        width:100%;
+        padding:4px;
+        border-bottom: dotted 1px #aaa;
+      }
+      .list-content{
+        padding:12px;
+        color:$black;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #eef;
+        font-style: normal;
+        span{
+          font-size: 12px;
+        }
+      }
+    }
+    .blog-right{
+      .ad-space{
+        height:200px;
+        width:100%;
+        margin: 8px 0;
+        background-color: #ccc;
+      }
+      .sns-btn{
+        width:100%;
+        padding:16px;
+        margin: 8px 0;
+        border: solid 4px;
+        border-radius: 3px;
+        font-size: 16px;
+        font-weight: bold;
+        &:hover{
+          background-color: #fff;
+          transition:300ms ease;
+        }
+      }
+      .twitter{
+        color: $twitter;
+      }
+      .qiita{
+        color: $qiita;
+      }
+    }
+  }
+  .admin-wrap{
+    margin:auto;
+    overflow: auto;
+    padding:16px;
+    .menu{
+      padding:8px 16px;
+      background-color: $black;
+      color: white;
+    }
+    input[type="text"], input[type="file"]{
+      padding:10px;
+      font-size: 14px;
+      margin:4px 0;
+      width:100%;
+      background-color: transparent;
+      border:none;
+      border-bottom: solid 2px salmon;
+      &:focus{
+        background-color: #fff;
+        transition:400ms ease;
+      }
+    }
+  }
+}

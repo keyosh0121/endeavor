@@ -1,0 +1,49 @@
+<main>
+  <div class="profile">
+    <span>Kei Yoshiyama(<% parse = Date.today - Date.new(1996,1,21) %><%= parse.to_i/365 %>)</span><br>
+    <p>早稲田大学国際教養学部'18卒<br>外資系コンサルティングファームに勤務</p><br>
+    <p style="font-size:13px;">学習記録・学習で気づいたことをメモするためのメディア。<br>Ruby on Railsを使用して設計・コーディング・デザイン全てやってます。</p>
+  </div>
+  <div class="background scroll-slow"></div>
+  <div class="blog-main">
+    <div class="blog-left">
+      <div class="menu-1">最新記事(6件)</div>
+      <% Article.order('created_at').each do |article|%>
+        <div class="menu-2"><%= link_to(article.title,'/articles/' + article.id.to_s) %></div>
+      <% end %>
+      <div class="menu-1">カテゴリ</div>
+
+      <% Category.all.each do |category|%>
+      <%= link_to('/category/' + category.id.to_s) do%>
+        <div class="menu-2"><%= category.name %>(<%= Article.where(category_id: category.id).count%>)</div>
+        <% end %>
+      <% end %>
+
+      <div class="menu-1">タグ</div>
+
+      <% Tag.all.each do |tag|%>
+      <%= link_to('/tag/' + tag.id.to_s) do %>
+        <div class="menu-2"><%= tag.name %>(<%= tag.count %>)</div>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="blog-center">
+      <h2>人気記事</h2>
+      <div class="best-articles">
+        <div class="best-article"></div>
+        <div class="best-article"></div>
+        <div class="best-article"></div>
+      </div>
+      <h2>お知らせ</h2>
+      <div class="notice">2017.12.10 僕のおじいちゃんの誕生日</div>
+    </div>
+    <div class="blog-right">
+      <div class="ad-space"></div>
+      <div class="sns-btn twitter">Twitterでフォロー</div>
+      <div class="sns-btn studyplus">StudyPlusでフォロー</div>
+      <%= link_to('https://qiita.com/keiy121') do %><div class="sns-btn qiita">Qiitaをチェック</div><% end %>
+
+      </div>
+    </div>
+  </div>
+</main>

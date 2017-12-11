@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Endeavor</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <header class="scroll-slow">
+      <div class="header-title">
+        <h1>Endeavor <span>Kei Yoshiyama's Learning Journal</span></h1>
+      </div>
+    </header><!-- /header -->
+    <%= yield %>
+    <footer class="scroll-slow">
+    </footer>
+  </body>
+</html>
