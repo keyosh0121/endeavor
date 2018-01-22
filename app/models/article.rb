@@ -1,4 +1,5 @@
 class Article < ApplicationRecord
+  validates :title, presence: true
   def tags
     tags = self.tags_id
     array = tags.split(",")
